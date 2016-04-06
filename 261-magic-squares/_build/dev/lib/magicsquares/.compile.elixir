@@ -1,0 +1,6 @@
+v2.
+{<<"_build/dev/lib/magicsquares/ebin/Elixir.Magicsquares.beam">>,
+ 'Elixir.Magicsquares',module,<<"lib/magicsquares.ex">>,
+ ['Elixir.Kernel'],
+ [erlang,'Elixir.IO','Elixir.String.Chars','Elixir.Enum'],
+ [],nil}.
