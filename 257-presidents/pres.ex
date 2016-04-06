@@ -10,7 +10,9 @@ defmodule Pres do
     |> Enum.map(&years_alive(&1))
     |> List.flatten
     |> Enum.reduce(%{}, &Map.update(&2, &1, 1, fn(n) -> n + 1 end))
-    |> Enum.max_by(fn({_, v}) -> v end)
+    |> Enum.sort_by(fn({_, v}) -> v end)
+    |> Enum.reverse
+    #|> Enum.max_by(fn({_, v}) -> v end)
   end
   
   def parse([line]) do
