@@ -1,0 +1,16 @@
+v2.
+{<<"_build/test/lib/garagedoor/ebin/Elixir.Garagedoor.beam">>,
+ 'Elixir.Garagedoor',module,<<"lib/garagedoor.ex">>,
+ ['Elixir.Kernel'],
+ [],[],nil}.
+{<<"_build/test/lib/garagedoor/ebin/Elixir.Glass.beam">>,'Elixir.Glass',
+ module,<<"lib/garagedoor/glass.ex">>,
+ ['Elixir.String.Chars',erlang,'Elixir.Enum','Elixir.HashSet','Elixir.Fsm',
+  'Elixir.Kernel','Elixir.Module','Elixir.Protocol','Elixir.Kernel.Utils'],
+ [],[],nil}.
+{<<"_build/test/lib/garagedoor/ebin/Elixir.Door.beam">>,'Elixir.Door',module,
+ <<"lib/garagedoor/door.ex">>,
+ ['Elixir.String.Chars',erlang,'Elixir.Enum','Elixir.HashSet','Elixir.Fsm',
+  'Elixir.Kernel','Elixir.Module','Elixir.Protocol','Elixir.Kernel.Utils'],
+ ['Elixir.String','Elixir.IO'],
+ [],nil}.

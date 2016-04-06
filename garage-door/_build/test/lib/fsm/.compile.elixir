@@ -1,0 +1,6 @@
+v2.
+{<<"/home/ubuntu/workspace/dp/260-garagedoor/_build/test/lib/fsm/ebin/Elixir.Fsm.beam">>,
+ 'Elixir.Fsm',module,<<"lib/fsm.ex">>,
+ ['Elixir.Kernel'],
+ [erlang,'Elixir.Macro','Elixir.Access'],
+ [],nil}.

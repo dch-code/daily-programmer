@@ -1,0 +1,2 @@
+defmodule Garagedoor do
+end
