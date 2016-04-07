@@ -34,7 +34,8 @@ this is an example of the atbash cipher
 iex> inputs = ["foobar", "wizard", "/r/dailyprogrammer", "gsrh rh zm vcznkov lu gsv zgyzhs xrksvi"]
 ["foobar", "wizard", "/r/dailyprogrammer",
  "gsrh rh zm vcznkov lu gsv zgyzhs xrksvi"]
-iex> inputs |> Enum.map(&Atbash.process(&1))
+ 
+iex> inputs |> Enum.map(&Atbash.translate(&1))
 ["ullyzi", "draziw", "/i/wzrobkiltiznnvi",
  "this is an example of the atbash cipher"]
 ```
