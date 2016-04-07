@@ -3,7 +3,7 @@ defmodule Atbash do
   @plain  ~w(a b c d e f g h i j k l m n o p q r s t u v w x y z /)
   @cipher ~w(z y x w v u t s r q p o n m l k j i h g f e d c b a /)
   
-  def process(string) do
+  def translate(string) do
     string
     |> String.graphemes
     |> swap_chars(Atbash.cipher_key)
