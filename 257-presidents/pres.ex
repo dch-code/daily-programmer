@@ -17,17 +17,25 @@ defmodule Pres do
   
   def parse([line]) do
     [_, b, _, d, _] = String.split(line, ",")
-    b = String.strip(String.slice(b, -4, 4))
-    d = String.strip(String.slice(d, -4, 4))
+    b = 
+      b
+      |> String.slice(-4, 4)
+      |> String.strip
+    d = 
+      d
+      |> String.slice(-4, 4)
+      |> String.strip
+      
+    case d do
+      "" -> {{d, _, _}, _} = :calendar.local_time
+            d
+      _  -> String.to_integer(d)
+    end
+    
     {b, d}
   end
   
   def make_ints({b, d}) do
-    case d do
-      "" -> {{y, _, _}, _} = :calendar.local_time
-            {String.to_integer(b), y}
-      _  -> {String.to_integer(b), String.to_integer(d)}
-    end
   end
   
   def years_alive{b, d} do
