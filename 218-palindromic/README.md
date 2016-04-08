@@ -49,7 +49,7 @@ Bonus 2: See which numbers don't get palindromic in under 10000 steps. Numbers t
 
 Usage: `Palindromic.go(n)`
 
-```elixir
+```
 iex(1)> list = [123, 286, 196196871]
 [123, 286, 196196871]
 
