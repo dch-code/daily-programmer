@@ -2,7 +2,7 @@ defmodule Palindromic do
 
   def go(n), do: go(n, 0, n)
   
-  def go(n, steps, current) do
+  defp go(n, steps, current) do
     if test(current) do
       IO.puts "#{n} gets palindromic after #{steps} steps: #{current}"
       current
@@ -16,7 +16,7 @@ defmodule Palindromic do
     n == reversed(n)
   end
   
-  def step(n, steps, current) do
+  defp step(n, steps, current) do
     new_value = current + reversed(current)
     go(n, steps + 1, new_value)
   end
