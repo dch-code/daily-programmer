@@ -1,3 +1,3 @@
-# r/DailyProgrammer Solutions
+## r/DailyProgrammer Solutions
 
 http://reddit.com/r/dailyprogrammer
