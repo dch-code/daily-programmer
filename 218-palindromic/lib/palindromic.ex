@@ -1,5 +1,9 @@
 defmodule Palindromic do
 
+  def test(n) do
+    n == reversed(n)
+  end
+  
   def go(n), do: go(n, 0, n)
   
   defp go(n, steps, current) do
@@ -12,9 +16,6 @@ defmodule Palindromic do
     end
   end
   
-  def test(n) do
-    n == reversed(n)
-  end
   
   defp step(n, steps, current) do
     new_value = current + reversed(current)
