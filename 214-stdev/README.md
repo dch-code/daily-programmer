@@ -45,3 +45,33 @@ Output 2
 
 ## Notes
 For you statistics nerds out there, note that this is the population standard deviation, not the sample standard deviation. We are, after all, given the entire population and not just a sample.
+
+
+## Solution
+```
+iex> input1 = [5, 6, 11, 13, 19, 20, 25, 26, 28, 37]
+[5, 6, 11, 13, 19, 20, 25, 26, 28, 37]
+
+iex> Stdev.average(input1)
+19.0
+
+iex> Stdev.diffs(input1)  
+[-14.0, -13.0, -8.0, -6.0, 0.0, 1.0, 6.0, 7.0, 9.0, 18.0]
+
+iex> Stdev.diffs(input1) |> Stdev.diffs_squared
+[196.0, 169.0, 64.0, 36.0, 0.0, 1.0, 36.0, 49.0, 81.0, 324.0]
+
+iex> Stdev.variance(input1)                    
+95.6
+
+iex> Stdev.stdev(input1)
+9.777525249264253
+```
+
+```
+iex> input2 = [37, 81, 86, 91, 97, 108, 109, 112, 112, 114, 115, 117, 121, 123, 141]
+[37, 81, 86, 91, 97, 108, 109, 112, 112, 114, 115, 117, 121, 123, 141]
+ 
+iex> Stdev.stdev(input2)
+23.29081841031401
+```
