@@ -49,21 +49,27 @@ For you statistics nerds out there, note that this is the population standard de
 
 ## Solution
 ```
+# instantiate a list
 iex> input1 = [5, 6, 11, 13, 19, 20, 25, 26, 28, 37]
 [5, 6, 11, 13, 19, 20, 25, 26, 28, 37]
 
+# you can find it's average/mean
 iex> Stdev.average(input1)
 19.0
 
+# or find the distance from the mean for each element in the list
 iex> Stdev.diffs(input1)  
 [-14.0, -13.0, -8.0, -6.0, 0.0, 1.0, 6.0, 7.0, 9.0, 18.0]
 
+# an intermediate step to square each distance from the mean
 iex> Stdev.diffs(input1) |> Stdev.diffs_squared
 [196.0, 169.0, 64.0, 36.0, 0.0, 1.0, 36.0, 49.0, 81.0, 324.0]
 
+# or just calculate the variance directly
 iex> Stdev.variance(input1)                    
 95.6
 
+# and of course you can just calculate the standard deviation of a list directly
 iex> Stdev.stdev(input1)
 9.777525249264253
 ```
