@@ -1,17 +1,16 @@
 defmodule Palindromic do
 
-  def test(n) do
+  def is_palindrome?(n) do
     n == reversed(n)
   end
   
   def go(n), do: go(n, 0, n)
   
   defp go(n, steps, current) do
-    if test(current) do
+    if is_palindrome?(current) do
       IO.puts "#{n} gets palindromic after #{steps} steps: #{current}"
       current
     else
-      IO.puts "No solution at step #{steps}. Last check was #{String.length(to_string(current))} digits long."
       step(n, steps, current)
     end
   end

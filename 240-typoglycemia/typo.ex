@@ -20,10 +20,14 @@ defmodule Typo do
       String.length(to_string(word)) <= 2 -> word
       true                     ->
         first = String.first(word)
-        last = String.last(word)
-        mid = String.replace_leading(word, first, "")
-        mid = String.replace_trailing(mid, last, "")
-        mid = String.reverse(mid)
+        last  = String.last(word)
+        mid   = 
+                String.replace_leading(word, first, "")
+                |> String.replace_trailing(last, "")
+                |> String.reverse
+        #mid = String.replace_leading(word, first, "")
+        #mid = String.replace_trailing(mid, last, "")
+        #mid = String.reverse(mid)
         first <> mid <> last
     end
   end
