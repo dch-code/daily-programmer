@@ -1,7 +1,7 @@
 defmodule ProgTax do
   alias :math, as: Math
 
-  def get_tax_owed_in_dollars(income) do
+  def tax(income) do
     get_tax_rate(income)
     |> Enum.map(fn({rate, amount}) -> rate * amount end)
     |> Enum.sum
